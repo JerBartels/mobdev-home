@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.be.iamjer.home.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="home love"
+            android:fontFamily="sans-serif"
+            android:textSize="15sp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/white"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@android:color/white"
+        android:paddingTop="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vg_home"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/icon_home"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/home"
+                android:layout_marginRight="16dp"/>
+
+            <TextView
+                android:id="@+id/text_street"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="neerstraat 4"
+                android:textSize="13sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif"
+                android:layout_toRightOf="@id/icon_home"/>
+
+            <TextView
+                android:id="@+id/text_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2812 muizen"
+                android:textSize="13sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="sans-serif"
+                android:layout_below="@id/text_street"
+                android:layout_toRightOf="@id/icon_home"
+                android:layout_marginTop="4dp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"
+            android:layout_below="@id/vg_home"
+            android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vg_hab"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:layout_below="@+id/vg_home">
+
+        <ImageView
+            android:id="@+id/icon_hab"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/person"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/text_jer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jer bartels"
+            android:textSize="13sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"
+            android:layout_toRightOf="@id/icon_hab"/>
+
+        <TextView
+            android:id="@+id/text_anneleen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="anneleen huygens"
+            android:textSize="13sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"
+            android:layout_below="@id/text_jer"
+            android:layout_toRightOf="@id/icon_hab"
+            android:layout_marginTop="4dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        android:layout_below="@id/vg_hab"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vg_mail"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:layout_below="@+id/vg_hab">
+
+        <ImageView
+            android:id="@+id/icon_mail"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/mail"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/text_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jer@iamjer.be"
+            android:textSize="13sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"
+            android:layout_toRightOf="@id/icon_mail"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        android:layout_below="@id/vg_mail"
+        android:layout_marginTop="8dp"/>
+
+     <Button
+         android:id="@+id/btn_reportCrime"
+         android:layout_width="wrap_content"
+         android:layout_height="48dp"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:text="report crime"
+         android:background="#BF360C"
+         android:textColor="@android:color/white"
+         android:fontFamily="sans-serif"
+         android:textStyle="bold"
+         android:textSize="14sp"
+         android:paddingLeft="16dp"
+         android:paddingRight="16dp"
+         android:layout_marginBottom="16dp"/>
+
+</RelativeLayout>
+
+
+</LinearLayout>
